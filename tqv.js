@@ -57,3 +57,21 @@ document.addEventListener('click', function(event) {
 console.log("Hi Welcome Terminal Quick View")
 
 
+
+
+
+function copyLink() {
+  const link = "https://hlord-g.github.io/cqv.github.io/tqv.js";
+
+  // Create temporary input para sa pag-copy
+  const tempInput = document.createElement("input");
+  tempInput.value = link;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999); // For mobile compatibility
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+
+  // Optional: notify user
+  console.log("✔️ Link copied to clipboard!");
+}
