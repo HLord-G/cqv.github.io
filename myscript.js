@@ -19,3 +19,6 @@ function copyLink() {
   console.log("Make sure to put this code in the header (<head>) of your website for it to work correctly.");
   
 }
+
+
+

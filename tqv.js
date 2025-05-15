@@ -42,7 +42,7 @@ document.addEventListener('click', (event) => {
 
 // ===== Override console.log and Output to Textarea =====
 window.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
+ 
     const originalLog = console.log;
 
     console.log = function (...args) {
@@ -56,5 +56,5 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     console.log("Console log capture initialized.");
-  }, 100);
+ 
 });
